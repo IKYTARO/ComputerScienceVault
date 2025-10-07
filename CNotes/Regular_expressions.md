@@ -1,11 +1,4 @@
----
-Type: Note
-Status: Finished
-Date: 29.08.2025
-Title: Regular expression
-tags:
-  - CNote
----
+# Регулярные выражения (regular expressions)
 
 ### Введение
 

@@ -79,7 +79,7 @@ typedef struct TTest TTest;
 Проверки (assertions) могут быть разбиты на несколько подгрупп, согласно типу проверяемого условия:
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'fontSize': '20px'}}}%%
+%%{init: {'theme': 'default', 'themeVariables': { 'fontSize': '20px'}}}%%
 mindmap
   root((🛡️ Assertions Check <br/> Типы проверок))
     (🎯 Проверки равенства)

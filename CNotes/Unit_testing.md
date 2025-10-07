@@ -191,6 +191,7 @@ END_TEST
 | `TCase`                                          | Тип декларирующий тестовый случай                              |
 | `TCase *tcase_create(char const *tcase_name);`   | Функция для создания тестового случая с именем `tcase_name`    |
 | `void tcase_add_test(TCase *tcase, TTest ttest)` | Функция для добавления теста `ttest` в тестовый случай `tcase` |
+
 Предположим, что мы написали несколько тестов для функции `strlen`, которые тестировали разные аспекты ее поведения. Создадим для них общий тестовый случай:
 ```c
 // Создаем Test case для нашего test_strlen
@@ -211,6 +212,7 @@ tcase_add_test(tc_strlen, test_strlen_special_characters);
 | `Suite`                                            | Тип декларирующий набор тестов                                           |
 | `Suite *suite_create(char const *suite_name);`     | Функция для создания набора тестов с именем `suite_name`                 |
 | `void suite_add_tcase(Suite *suite, TCase *tcase)` | Функция для добавления тестового случая `tcase` в тестовый набор `suite` |
+
 Пусть мы создали тесты и соответственно тестовые случаи для двух других строковых функций - `strcpy` и `strcmp`. Объединим их в один тестовый набор:
 ```c
 // Создание suite
@@ -371,7 +373,7 @@ void srunner_run(SRunner *sr, char const *sname, char const *tcname,
     CK_NORMAL,    // Стандартный вывод (рекомендуется)
     CK_VERBOSE,   // Подробный вывод
     CK_ENV,       // Из переменной окружения CK_VERBOSITY
-    CK_SUBUNIT    // Выводит информацию о ходе выполнения протокола выполнения                         // субъединичного теста (см док.)
+    CK_SUBUNIT    // Выводит информацию о ходе выполнения протокола выполнения субъединичного теста (см док.)
     };
 	```
 
